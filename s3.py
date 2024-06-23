@@ -3,7 +3,6 @@ import os
 
 S3_BUCKET = 'cpu-monitoring-app'
 LOCAL_DIRECTORY = 'D:\Monitoring-application'  
-# Initialize S3 client
 s3_client = boto3.client('s3')
 
 def upload_directory_to_s3(local_directory, bucket_name):
